@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CafeinaJs - Desafio JS 04</title>
+</head>
+<body>
+    <h1>Promoção compre seu carro sem juros!</h1>
+    <h3>Regras da Promoção:</h3>
+    <ul>
+        <li>Entrada de 30% a 90%</li>
+        <li>De 3 parcelas até 24 parcelas</li>
+    </ul>
+    <form>
+        <label for="inCarro">Veículo desejado</label>
+        <input type="text" name="inCarro"><br>
+        <label for="inPreco">Valor do Veículo</label>
+        <input type="number" name="inPreco"><br>
+        <label for="inEntrada">Entrada em %</label>
+        <input type="number" min="30" max="90" name="inEntrada"><br>
+        <label for="inParcelas">Número de parcelas</label>
+        <input type="number" min="3" max="24" name="inParcelas"><br>
+        <input type="submit" value="Calcular Promoção">
+    </form>
+    <h3 id="outCarro"></h3>
+    <h3 id="outEntrada"></h3>
+    <h3 id="outParcelas"></h3>
+    <script src="calculaParcelas.js"></script>    
+</body>
+</html>
